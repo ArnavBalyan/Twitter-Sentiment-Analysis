@@ -3,30 +3,6 @@ The repo includes code to process text, engineer features and perform sentiment 
 
 ## Setup
 
-### Install python
-1. Install pyenv for managing Python versions
-```
-brew install pyenv
-```
-2. Install python with this flag
-```
-CFLAGS="-I$(xcrun --show-sdk-path)/usr/include" pyenv install 3.7.2
-```
-
-### Get the code
-1. Clone the repo to your machine
-```
-git clone https://github.com/kb22/Twitter-Sentiment-Analysis-using-Neural-Networks.git
-```
-2. Move into the folder
-```
-cd Twitter-Sentiment-Analysis-using-Neural-Networks
-```
-3. Install all dependencies
-```
-pip install -r requirements.txt
-```
-
 ### Download the dataset
 The dataset has been taken from [Kaggle](https://www.kaggle.com/kazanova/sentiment140)
 1. Download the file from kaggle.
@@ -58,13 +34,6 @@ python train-test-split.py
 - Remove stopwords
 - Lemmatize words
 - Stem words
-```
-python preprocessing.py
-```
-3. After processing of the tweets, **LSTM** can be used to train on the data and test the accuracy on the test data.
-```
-python lstm.py
-```
 
 
 
